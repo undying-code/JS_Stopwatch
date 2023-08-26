@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="game5.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="loading">
+      <img id="loading-image" src="JS_10_5.png" alt="Loading..." />
+    </div>
+    <div class="container">
+      <div class="box">
+        <div id="timeunit">
+          <h1 class="timer hours">00</h1>
+          :
+          <h1 class="timer minutes">00</h1>
+          :
+          <h1 class="timer seconds">00</h1>
+          :
+          <h1 class="timer miliseconds">00</h1>
+        </div>
+        <div id="action">
+          <button class="btn">Play</button>
+          <button class="btn">Stop</button>
+          <button class="btn">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(window).on('load', function () {
+        $('#loading').hide(); 
+      });
+    </script>
+    <script src="game5.js"></script>
+  </body>
+</html>
